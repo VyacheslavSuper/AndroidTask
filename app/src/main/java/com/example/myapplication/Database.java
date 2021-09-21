@@ -29,8 +29,4 @@ public class Database {
     public static List<Currency> getList() {
         return new ArrayList<>(map.values());
     }
-
-    public static Currency getCurrencyByString(String str) {
-        return map.get(str);
-    }
 }

@@ -17,7 +17,6 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Site {
-
     @SerializedName("Date")
     public Date date;
     @SerializedName("PreviousDate")

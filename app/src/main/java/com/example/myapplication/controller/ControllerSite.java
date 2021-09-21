@@ -12,7 +12,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class ControllerSite {
-    private static Gson gson = new Gson();
+    private static final Gson gson = new Gson();
 
     public static Site getInfoFromSite(String site) {
         try {

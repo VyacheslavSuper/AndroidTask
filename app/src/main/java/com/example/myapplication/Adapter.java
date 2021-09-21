@@ -18,8 +18,6 @@ public class Adapter extends BaseAdapter {
         this.context = context;
     }
 
-
-
     @Override
     public int getCount() {
         return Database.getList().size();
@@ -41,20 +39,11 @@ public class Adapter extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.row_list, parent, false);
         }
 
-//        ImageView imageView = convertView.findViewById(R.id.img);
         TextView textView = convertView.findViewById(R.id.tv);
-        LinearLayout linearLayout = convertView.findViewById(R.id.lin);
 
         final Currency model = Database.getList().get(position);
 
         textView.setText(model.getCharCode());
-
-        linearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Toast.makeText(context, model.getName(), Toast.LENGTH_SHORT).show();
-            }
-        });
 
         return convertView;
     }
